@@ -9,8 +9,11 @@
 		}
 	</style>
 	<link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+	<link href="FontAwesome/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
+
+<!-- nav bar -->
 <div class="navbar navbar-inverse navbar-fixed-top">
 	<div class="navbar-inner">
 		<div class="container">
@@ -24,14 +27,124 @@
 				<ul class="nav">
 					<li class="active"><a href="#">Home</a></li>
 					<li><a href="#about">About</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#publications">Publications</a></li>
 					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</div><!--/.nav-collapse -->
 		</div>
 	</div>
 </div>
+
 <div class="container">
-	<p>Statistical Programmer by day, electronic musician by night.</p>
+	<div class="row" style="margin-bottom: 20px;">
+
+		<!-- left part of page -->
+		<div class="span8">
+			<h1 style="color: #445555;">Kevin Ushey</h1>
+			<p class="lead">Data Scientist / Statistical Programmer</p>
+
+			<h2 id="about">About Me</h2>
+
+			<p>I am a statistical programmer within the James Hogg Research Center in Vancouver, BC.</p>
+			<p>
+				I completed an MSc in Statistics at the University of British Columbia, under the supervision of
+				<a href="http://www.stat.ubc.ca/~jenny/">Jenny Bryan</a>. My
+				<a href="https://circle.ubc.ca/bitstream/id/132997/ubc_2011_fall_ushey_kevin.pdf">thesis</a> (PDF)
+				involved the study of gene-gene and gene-Rx interaction effects, and statistical assessment of these
+				epistatic effects in yeast growth curves.
+			</p>
+			<p>
+				Currently, my work involves the analysis of genome-wide association studies, for identifying
+				genetic markers associated with asthma phenotypes.
+			</p>
+
+			<h2 id="projects">Projects</h2>
+
+			<h4>Kmisc</h4>
+			<p>
+				A set of miscellaneous functions for everything from data subsetting and reshaping functions for
+				faster and easier file I/O and wrapper functions for easy generation of C++-backed apply and tapply-style
+				functions. Essentially, this package is a grab-bag of functions that have made my life easier or
+				when programming in R.
+				<br>
+				<small>
+					<a href="http://cran.r-project.org/web/packages/Kmisc/index.html">CRAN</a>,
+					<a href="https://github.com/cdrv/Kmisc">GitHub</a>
+				</small>
+			</p>
+
+			<h4>timeit</h4>
+			<p>
+				Easy profiling of blocks of R code, with some nice functions for plotting and summarizing of the
+				benchmark results. This package can be used to identify bottlenecks in blocks of code.
+				<br>
+				<small>
+					<a href="http://cran.r-project.org/web/packages/timeit/">CRAN</a>,
+					<a href="https://github.com/cdrv/timeit">GitHub</a>
+				</small>
+			</p>
+
+			<h4>rsnps</h4>
+			<p>
+				I contributed functions for querying SNP information from NCBI's dbSNP, as well
+				as an easy wrapper to the Broad Institute's SNAP for identifying SNPs in high linkage disequilibrium
+				with SNPs of interest.
+				<br>
+				<small>
+					<!-- <a href="http://cran.r-project.org/web/packages/rsnps/">CRAN</a>, -->
+					<a href="https://github.com/rOpenSci/rsnps">GitHub</a>
+				</small>
+			</p>
+
+			<h4>EasySVGAnnotation</h4>
+			<p>
+				This project exports a function, <code>makesvg</code>, that can be used to generate tool-tip augmented
+				SVG graphics from R lattice plots. The tool-tip dialog information is inherited from the data frame
+				containing the vectors to be plotted, and the tool-tips are dynamically displayed on mouseover
+				through JavaScript. These plots embed particularly well in R Markdown documents.
+				<br>
+				<small>
+					<a href="https://github.com/cdrv/EasySVGAnnotation">Github</a>
+				</small>
+
+			</p>
+
+			<h2 id="publications">Publications</h2>
+			<strong>Synthetic Lethality of Cohesins with PARPs and Replication Fork Mediators</strong>
+			- <a href="http://www.plosgenetics.org/article/info%3Adoi%2F10.1371%2Fjournal.pgen.1002574">PLoS Genetics</a>
+
+			<h2 id="contact">Contact</h2>
+			<ul class="unstyled">
+				<li>
+					<i class="icon-twitter"></i><strong> Twitter: </strong> <a href="https://twitter.com/kevin_ushey">@kevin_ushey</a>
+				</li>
+				<li>
+					<i class="icon-github"></i><strong> GitHub: </strong> <a href="http://www.github.com/cdrv">github.com/cdrv</a>
+				</li>
+				<li>
+					<i class="icon-linkedin-sign"></i><strong> LinkedIn: </strong> <a href="http://www.linkedin.com/pub/kevin-ushey/42/355/33a">linkedin.com/kevin-ushey</a>
+				</li>
+			</ul>
+
+		</div>
+		<!-- right part of page -->
+		<div class="span4 hidden-phone">
+			<img style="float: right;" src="img/kevin.jpg">
+		</div>
+
+	</div>
+	<!-- footer -->
+	<div class="modal-footer">
+		<p>
+			Designed with <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a>.
+			Hosted on <a href="https://github.com/cdrv/cdrv.github.com">GitHub pages</a>.
+			Icons from <a href="http://fortawesome.github.com/Font-Awesome/">Font Awesome</a>.
+		</p>
+	</div>
 </div>
+
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
